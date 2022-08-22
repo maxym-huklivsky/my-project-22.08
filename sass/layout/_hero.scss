@@ -1,0 +1,88 @@
+.hero {
+	padding: 200px 0 200px;
+
+	background-image: url(../../mages/hero/hero.jpg);
+	@extend %section-dark;
+
+	@media screen and (max-width: 719px) {
+		text-align: center;
+	}
+
+	@media screen and (min-width: 1200px) {
+		padding: 307px 0 525px;
+	}
+}
+
+.hero__button-sec {
+	@extend %button-sec;
+	margin-bottom: 24px;
+}
+
+.hero__title {
+	@extend %subtitle;
+	max-width: 400px;
+	margin-bottom: 24px;
+
+	font-weight: 700;
+
+	@media screen and (max-width: 719px) {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	@media screen and (min-width: 720px) {
+		max-width: 500px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		max-width: 647px;
+	}
+}
+
+.hero__desc {
+	max-width: 300px;
+	margin-bottom: 40px;
+
+	font-size: 18px;
+	line-height: 1.43;
+
+	@media screen and (max-width: 719px) {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	@media screen and (min-width: 720px) {
+		max-width: 400px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		font-size: 24px;
+		max-width: 544px;
+	}
+}
+
+.hero__wrap {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+
+	@media screen and (min-width: 720px) {
+		flex-direction: row;
+	}
+}
+
+.hero__button {
+	@extend %button;
+	padding: 30px 50px;
+
+	color: $grey-txt-cl-1;
+
+	@media screen and (max-width: 719px) {
+		padding: 20px 40px;
+	}
+}
+
+.hero__text {
+	max-width: 150px;
+}

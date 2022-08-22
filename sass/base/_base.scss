@@ -1,0 +1,36 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+	color: $grey-txt-cl-1;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 119px;
+
+		background-color: rgba(126, 134, 142, 0.1);
+		;
+		height: 1px;
+		width: 100%;
+
+		@media screen and (max-width: 719px) {
+			top: 105px;
+		}
+	}
+}
+
+.container {
+	padding: 0 10px;
+	margin: 0 auto;
+
+	@media screen and (min-width: 480px) {
+		width: 480px;
+	}
+
+	@media screen and (min-width: 720px) {
+		width: 720px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		width: 1200px;
+	}
+}

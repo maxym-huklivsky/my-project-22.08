@@ -1,98 +1,229 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Сладкий сундук</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+		integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
-	<header>
-		<a href="">Сладкий сундук</a>
-		<a href="">г. Санкт Петербург, ул. Куйбышева 31</a>
-		<a href="">8 (812) 844-95-49 Ежедневно с 9:00 до 20:00</a>
+	<header class="header">
+		<div class="header-absolute">
+			<p class="header__title" href="">Сладкий сундук</p>
+			<div class="mobail-conect">
+				<svg class="mobail-conect__icons" width="40" height="40">
+					<use href="./images/icons.svg#close"></use>
+					<use href="./images/icons.svg#eject"></use>
+				</svg>
+			</div>
+			<div class="header__wrap">
+				<a class="header__address" href="https://goo.gl/maps/rhSm74M7pe5zrsgv7" target="_blank"
+					rel="noopener noreferrer">
+					<div class="wrap-svg">
+						<svg width="17" height="17">
+							<use href="./images/icons.svg#geo"></use>
+						</svg>
+					</div>
+					<span class="header-address__text">г. Санкт Петербург, ул. Куйбышева 31</span>
+				</a>
+				<div class="header__tel">
+					<a href="tel:+88128449549">
+						<svg width="36" height="36">
+							<use href="./images/icons.svg#tel"></use>
+						</svg>
+					</a>
+					<div class="header-tel__wrap">
+						<a class="header-tel__text" href="tel:+88128449549">8 (812) 844-95-49</a>
+						<p class="header-tel__desc">Ежедневно с 9:00 до 20:00</p>
+					</div>
+				</div>
+			</div>
+		</div>
 	</header>
 
 	<main>
 		<!-- Hero -->
-		<section>
-			<button>Вкуснейшие</button>
-			<h1>Пирожные и капкейки от 150 ₽/шт. с доставкой по Санкт Петербургу</h1>
-			<p>Приготовим за 3 часа в день заказа. Доставка на авто в холодильнике.</p>
-			<button>Перейти в каталог</button>
-			<p>9 различных видов на выбор</p>
+		<section class="hero">
+			<div class="container">
+				<div class="hero__button-sec">Вкуснейшие</div>
+				<h1 class="hero__title">Пирожные и капкейки от 150 ₽/шт. с доставкой по Санкт Петербургу</h1>
+				<p class="hero__desc">Приготовим за 3 часа в день заказа. Доставка на авто в холодильнике.</p>
+				<div class="hero__wrap">
+					<button class="hero__button">Перейти в каталог</button>
+					<p class="hero__text">9 различных видов на выбор</p>
+				</div>
+			</div>
 		</section>
 
 		<!-- Сatalog -->
-		<section>
-			<h2>Для любых событий и дорогих вам людей</h2>
-			<ul>
-				<li>
-					<img src="" alt="">
-					<h3>Кремовый замок</h3>
-					<p>Нежный крем любого цвета на выбор, вафельная основа</p>
-					<p>150 ₽/шт.</p>
-					<button>Заказать</button>
-				</li>
-				<li>
-					<img src="" alt="">
-					<h3>Малиновый рай</h3>
-					<p>Воздушный крем, темная основа и ягода малины</p>
-					<p>150 ₽/шт.</p>
-					<button>Заказать</button>
-				</li>
-				<li>
-					<img src="" alt="">
-					<h3>Фейерверк</h3>
-					<p>Разноцветные крем, с бисквитной основой</p>
-					<p>150 ₽/шт.</p>
-					<button>Заказать</button>
-				</li>
-				<li>
-					<img src="" alt="">
-					<h3>Шоколадный мир</h3>
-					<p>Ореховая стружка, нежный крем и шоколадная основа</p>
-					<p>150 ₽/шт.</p>
-					<button>Заказать</button>
-				</li>
-				<li>
-					<img src="" alt="">
-					<h3>Слезы дракона</h3>
-					<p>Нежный крем любого цвета на выбор, вафельная основа</p>
-					<p>150 ₽/шт.</p>
-					<button>Заказать</button>
-				</li>
-				<li>
-					<img src="" alt="">
-					<h3>Летняя фантазия</h3>
-					<p>Украшения в форме сердец, для любимого человека</p>
-					<p>150 ₽/шт.</p>
-					<button>Заказать</button>
-				</li>
-				<li>
-					<img src="" alt="">
-					<h3>Мыс безумия</h3>
-					<p>Разноцветная основа, стружка и нежный крем</p>
-					<p>150 ₽/шт.</p>
-					<button>Заказать</button>
-				</li>
-				<li>
-					<img src="" alt="">
-					<h3>Облачная сказка</h3>
-					<p>Светлая основа, нежный крем со стружкой сверху</p>
-					<p>150 ₽/шт.</p>
-					<button>Заказать</button>
-				</li>
-				<li>
-					<img src="" alt="">
-					<h3>Темный рыцарь</h3>
-					<p>Тёмная основа, нежный крем и вкусные шарики</p>
-					<p>150 ₽/шт.</p>
-					<button>Заказать</button>
-				</li>
-			</ul>
+		<section class="catalog">
+			<div class="container">
+				<h2 class="catalog__title">Для любых событий и дорогих вам людей</h2>
+				<ul class="catalog-list">
+					<li class="catalog-list__item">
+						<picture>
+							<source
+								srcset="./images/catalog-webp/img-1@1x.webp 1x, ./images/catalog-webp/img-1@2x.webp 2x, ./images/catalog-webp/img-1@3x.webp 3x"
+								type="image/webp">
+							<source
+								srcset="./images/catalog/img-1@1x.jpg 1x, ./images/catalog/img-1@2x.jpg 2x, ./images/catalog/img-1@3x.jpg 3x"
+								type="image/jpg">
+							<img src="./images/catalog/img-1@1x.jpg" alt="фото лакомства &#128523;" width="480">
+						</picture>
+						<div class="catalog-list__wrap">
+							<h3 class="catalog-list__title">Кремовый замок</h3>
+							<p class="catalog-list__desc">Нежный крем любого цвета на выбор, вафельная основа</p>
+							<p class="catalog-list__price">150 ₽/шт.</p>
+							<button class="catalog-list__button">Заказать</button>
+						</div>
+					</li>
+					<li class="catalog-list__item">
+						<picture>
+							<source
+								srcset="./images/catalog-webp/img-2@1x.webp 1x, ./images/catalog-webp/img-2@2x.webp 2x, ./images/catalog-webp/img-2@3x.webp 3x"
+								type="image/webp">
+							<source
+								srcset="./images/catalog/img-2@1x.jpg 1x, ./images/catalog/img-2@2x.jpg 2x, ./images/catalog/img-2@3x.jpg 3x"
+								type="image/jpg">
+							<img src="./images/catalog/img-2@1x.jpg" alt="фото лакомства &#128523;" width="480">
+						</picture>
+						<div class="catalog-list__wrap">
+							<h3 class="catalog-list__title">Малиновый рай</h3>
+							<p class="catalog-list__desc">Воздушный крем, темная основа и ягода малины</p>
+							<p class="catalog-list__price">150 ₽/шт.</p>
+							<button class="catalog-list__button">Заказать</button>
+						</div>
+					</li>
+					<li class="catalog-list__item">
+						<picture>
+							<source
+								srcset="./images/catalog-webp/img-3@1x.webp 1x, ./images/catalog-webp/img-3@2x.webp 2x, ./images/catalog-webp/img-3@3x.webp 3x"
+								type="image/webp">
+							<source
+								srcset="./images/catalog/img-3@1x.jpg 1x, ./images/catalog/img-3@2x.jpg 2x, ./images/catalog/img-3@3x.jpg 3x"
+								type="image/jpg">
+							<img src="./images/catalog/img-3@1x.jpg" alt="фото лакомства &#128523;" width="480">
+						</picture>
+						<div class="catalog-list__wrap">
+							<h3 class="catalog-list__title">Фейерверк</h3>
+							<p class="catalog-list__desc">Разноцветные крем, с бисквитной основой</p>
+							<p class="catalog-list__price">150 ₽/шт.</p>
+							<button class="catalog-list__button">Заказать</button>
+						</div>
+					</li>
+					<li class="catalog-list__item">
+						<picture>
+							<source
+								srcset="./images/catalog-webp/img-4@1x.webp 1x, ./images/catalog-webp/img-4@2x.webp 2x, ./images/catalog-webp/img-4@3x.webp 3x"
+								type="image/webp">
+							<source
+								srcset="./images/catalog/img-4@1x.jpg 1x, ./images/catalog/img-4@2x.jpg 2x, ./images/catalog/img-4@3x.jpg 3x"
+								type="image/jpg">
+							<img src="./images/catalog/img-4@1x.jpg" alt="фото лакомства &#128523;" width="480">
+						</picture>
+						<div class="catalog-list__wrap">
+							<h3 class="catalog-list__title">Шоколадный мир</h3>
+							<p class="catalog-list__desc">Ореховая стружка, нежный крем и шоколадная основа</p>
+							<p class="catalog-list__price">150 ₽/шт.</p>
+							<button class="catalog-list__button">Заказать</button>
+						</div>
+					</li>
+					<li class="catalog-list__item">
+						<picture>
+							<source
+								srcset="./images/catalog-webp/img-5@1x.webp 1x, ./images/catalog-webp/img-5@2x.webp 2x, ./images/catalog-webp/img-5@3x.webp 3x"
+								type="image/webp">
+							<source
+								srcset="./images/catalog/img-5@1x.jpg 1x, ./images/catalog/img-5@2x.jpg 2x, ./images/catalog/img-5@3x.jpg 3x"
+								type="image/jpg">
+							<img src="./images/catalog/img-5@1x.jpg" alt="фото лакомства &#128523;" width="480">
+						</picture>
+						<div class="catalog-list__wrap">
+							<h3 class="catalog-list__title">Слезы дракона</h3>
+							<p class="catalog-list__desc">Нежный крем любого цвета на выбор, вафельная основа</p>
+							<p class="catalog-list__price">150 ₽/шт.</p>
+							<button class="catalog-list__button">Заказать</button>
+						</div>
+					</li>
+					<li class="catalog-list__item">
+						<picture>
+							<source
+								srcset="./images/catalog-webp/img-6@1x.webp 1x, ./images/catalog-webp/img-6@2x.webp 2x, ./images/catalog-webp/img-6@3x.webp 3x"
+								type="image/webp">
+							<source
+								srcset="./images/catalog/img-6@1x.jpg 1x, ./images/catalog/img-6@2x.jpg 2x, ./images/catalog/img-6@3x.jpg 3x"
+								type="image/jpg">
+							<img src="./images/catalog/img-6@1x.jpg" alt="фото лакомства &#128523;" width="480">
+						</picture>
+						<div class="catalog-list__wrap">
+							<h3 class="catalog-list__title">Летняя фантазия</h3>
+							<p class="catalog-list__desc">Украшения в форме сердец, для любимого человека</p>
+							<p class="catalog-list__price">150 ₽/шт.</p>
+							<button class="catalog-list__button">Заказать</button>
+						</div>
+					</li>
+					<li class="catalog-list__item">
+						<picture>
+							<source
+								srcset="./images/catalog-webp/img-7@1x.webp 1x, ./images/catalog-webp/img-7@2x.webp 2x, ./images/catalog-webp/img-7@3x.webp 3x"
+								type="image/webp">
+							<source
+								srcset="./images/catalog/img-7@1x.jpg 1x, ./images/catalog/img-7@2x.jpg 2x, ./images/catalog/img-7@3x.jpg 3x"
+								type="image/jpg">
+							<img src="./images/catalog/img-7@1x.jpg" alt="фото лакомства &#128523;" width="480">
+						</picture>
+						<div class="catalog-list__wrap">
+							<h3 class="catalog-list__title">Мыс безумия</h3>
+							<p class="catalog-list__desc">Разноцветная основа, стружка и нежный крем</p>
+							<p class="catalog-list__price">150 ₽/шт.</p>
+							<button class="catalog-list__button">Заказать</button>
+						</div>
+					</li>
+					<li class="catalog-list__item">
+						<picture>
+							<source
+								srcset="./images/catalog-webp/img-8@1x.webp 1x, ./images/catalog-webp/img-8@2x.webp 2x, ./images/catalog-webp/img-8@3x.webp 3x"
+								type="image/webp">
+							<source
+								srcset="./images/catalog/img-8@1x.jpg 1x, ./images/catalog/img-8@2x.jpg 2x, ./images/catalog/img-8@3x.jpg 3x"
+								type="image/jpg">
+							<img src="./images/catalog/img-8@1x.jpg" alt="фото лакомства &#128523;" width="480">
+						</picture>
+						<div class="catalog-list__wrap">
+							<h3 class="catalog-list__title">Облачная сказка</h3>
+							<p class="catalog-list__desc">Светлая основа, нежный крем со стружкой сверху</p>
+							<p class="catalog-list__price">150 ₽/шт.</p>
+							<button class="catalog-list__button">Заказать</button>
+						</div>
+					</li>
+					<li class="catalog-list__item">
+						<picture>
+							<source
+								srcset="./images/catalog-webp/img-9@1x.webp 1x, ./images/catalog-webp/img-9@2x.webp 2x, ./images/catalog-webp/img-9@3x.webp 3x"
+								type="image/webp">
+							<source
+								srcset="./images/catalog/img-9@1x.jpg 1x, ./images/catalog/img-9@2x.jpg 2x, ./images/catalog/img-9@3x.jpg 3x"
+								type="image/jpg">
+							<img src="./images/catalog/img-9@1x.jpg" alt="фото лакомства &#128523;" width="480">
+						</picture>
+						<div class="catalog-list__wrap">
+							<h3 class="catalog-list__title">Темный рыцарь</h3>
+							<p class="catalog-list__desc">Тёмная основа, нежный крем и вкусные шарики</p>
+							<p class="catalog-list__price">150 ₽/шт.</p>
+							<button class="catalog-list__button">Заказать</button>
+						</div>
+					</li>
+				</ul>
+			</div>
 		</section>
 
 		<!-- Upload-photo -->
@@ -114,7 +245,8 @@
 			</ul>
 			<button>Задать вопрос Юлии</button>
 			<img src="" alt="">
-			<h3>Юлия Кондратьева</h3>
+			<div class="catalog-list__wrap"></div>
+			<h3 class="catalog-list__title">Юлия Кондратьева</h3>
 			<p>Ваш кондитер</p>
 		</section>
 
