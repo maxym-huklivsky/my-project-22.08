@@ -1,74 +1,108 @@
 .upload-photo {
 	@extend %section-dark;
 
-	background-image: url(../../images/upload-photo/bgc-img-3@1x.webp);
+	background-image: url(../images/upload-photo/bgc-img-3@1x.webp);
 	background-repeat: no-repeat;
-	background-size: 1034px 1090px;
-	background-position: -100px bottom;
+	background-size: contain;
+	background-position: -50px 590px;
+
+	@media screen and (min-width:333px) {
+		background-position: -50px 540px;
+	}
+
+	@media screen and (min-width:381px) {
+		background-position: -50px 510px;
+	}
+
+	@media screen and (min-width:391px) {
+		background-position: -50px 460px;
+	}
+
+	@media screen and (min-width:500px) {
+		background-position: -150px 460px;
+	}
+
+	@media screen and (min-width:720px) {
+		background-position: -500px 150px;
+	}
+
+	@media screen and (min-width:1200px) {
+		background-position: -500px 250px;
+	}
+
+	@media screen and (max-width:719px) {
+		text-align: center;
+	}
 
 	@media (min-device-pixel-ratio: 2),
 	(min-resolution: 192dpi),
 	(min-resolution: 2dppx) {
-		background-image: url(../../images/upload-photo/bgc-img-3@2x.webp);
+		background-image: url(../images/upload-photo/bgc-img-3@2x.webp);
 	}
 
 	@media (min-device-pixel-ratio: 3),
 	(min-resolution: 288dpi),
 	(min-resolution: 3dppx) {
-		background-image: url(../../images/upload-photo/bgc-img-3@3x.webp);
-	}
-
-	@media screen and (min-width:1920px) {
-		background-size: 1034px 1090px;
-		background-position: -100px bottom;
+		background-image: url(../images/upload-photo/bgc-img-3@3x.webp);
 	}
 }
 
 .upload-photo__bgi-2 {
 	width: 100%;
-	height: 330px;
+	height: 150px;
 
-	background-image: url(../../images/upload-photo/bgc-img-2@1x.webp);
+	background-image: url(../images/upload-photo/bgc-img-2@1x.webp);
 	background-size: cover;
+
+	@media screen and (min-width:1200px) {
+		height: 330px;
+	}
 
 	@media (min-device-pixel-ratio: 2),
 	(min-resolution: 192dpi),
 	(min-resolution: 2dppx) {
-		background-image: url(../../images/upload-photo/bgc-img-2@2x.webp);
+		background-image: url(../images/upload-photo/bgc-img-2@2x.webp);
 	}
 
 	@media (min-device-pixel-ratio: 3),
 	(min-resolution: 288dpi),
 	(min-resolution: 3dppx) {
-		background-image: url(../../images/upload-photo/bgc-img-2@3x.webp);
+		background-image: url(../images/upload-photo/bgc-img-2@3x.webp);
 	}
 }
 
 .upload-photo__bgi-1 {
 	width: 100%;
-	// height: 489px;
-	height: 300px;
+	height: 200px;
 
-	background-image: url(../../images/upload-photo/bgc-img-1@1x.webp);
+	background-image: url(../images/upload-photo/bgc-img-1@1x.webp);
 	background-size: cover;
+
+	@media screen and (min-width:1200px) {
+		height: 489px;
+	}
+
 
 	@media (min-device-pixel-ratio: 2),
 	(min-resolution: 192dpi),
 	(min-resolution: 2dppx) {
-		background-image: url(../../images/upload-photo/bgc-img-1@2x.webp);
+		background-image: url(../images/upload-photo/bgc-img-1@2x.webp);
 	}
 
 	@media (min-device-pixel-ratio: 3),
 	(min-resolution: 288dpi),
 	(min-resolution: 3dppx) {
-		background-image: url(../../images/upload-photo/bgc-img-1@3x.webp);
+		background-image: url(../images/upload-photo/bgc-img-1@3x.webp);
 	}
 }
 
 .upload-photo__wrap {
 	max-width: 481px;
-	// padding-top: 79px;
 	margin-left: auto;
+
+	@media screen and (min-width:720px) {
+		padding-top: 79px;
+	}
 }
 
 .upload-photo__button-sec {
@@ -90,5 +124,9 @@
 
 .upload-photo__button {
 	@extend %button;
-	padding: 30px 50px;
+	padding: 20px 40px;
+
+	@media screen and (min-width:1200px) {
+		padding: 30px 50px;
+	}
 }

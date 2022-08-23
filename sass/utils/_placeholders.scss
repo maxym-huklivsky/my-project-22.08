@@ -24,6 +24,7 @@
 	background: #FED84C;
 	border-radius: 8px;
 	color: $grey-txt-cl-1;
+	user-select: none;
 
 	&:hover {
 		background-color: #ffcc00;

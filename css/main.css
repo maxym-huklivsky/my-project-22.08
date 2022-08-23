@@ -22,6 +22,10 @@
   background: #FED84C;
   border-radius: 8px;
   color: #2E363E;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .upload-photo__button:hover, .catalog-list__button:hover, .hero__button:hover {
   background-color: #ffcc00;
@@ -54,7 +58,7 @@ body::before {
 }
 @media screen and (max-width: 719px) {
   body::before {
-    top: 105px;
+    top: 80px;
   }
 }
 @media screen and (max-width: 719px) {
@@ -130,8 +134,8 @@ a {
   width: 100%;
   height: 100%;
   padding: 80px 40px 40px;
-  transform: translateY(-200%);
-  transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(-100%);
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
   overflow: scroll;
   background-color: #ffffff;
 }
@@ -153,8 +157,9 @@ a {
 
 .menu-close {
   position: absolute;
-  top: 32px;
+  top: 40px;
   right: 30px;
+  transform: translateY(-50%);
   fill: #2E363E;
 }
 
@@ -284,27 +289,22 @@ a {
       -ms-user-select: none;
           user-select: none;
 }
-.header-absolute.no-transparency .header__title {
-  top: 24px;
-}
 @media screen and (max-width: 719px) {
   .header__title {
     position: absolute;
-    top: 37px;
+    top: 40px;
     left: 30px;
+    transform: translateY(-50%);
   }
 }
 
 .menu-open {
   position: absolute;
-  top: 32px;
+  top: 40px;
   right: 30px;
   fill: #ffffff;
-  transform: rotate(180deg);
+  transform: rotate(180deg) translateY(50%);
   transform-origin: center;
-}
-.header-absolute.no-transparency .menu-open {
-  top: 24px;
 }
 @media screen and (min-width: 720px) {
   .menu-open {
@@ -380,10 +380,20 @@ a {
 
 .hero {
   padding: 150px 0 150px;
-  background-image: url(../../images/hero/hero@3x.jpg);
+  background-image: url(../images/hero/hero@1x.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/hero/hero@2x.webp);
+  }
+}
+@media (min-device-pixel-ratio: 3), (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+  .hero {
+    background-image: url(../images/hero/hero@3x.webp);
+  }
 }
 @media screen and (max-width: 719px) {
   .hero {
@@ -474,8 +484,10 @@ a {
   }
 }
 
-.catalog {
-  padding-top: 80px;
+@media screen and (max-width: 719px) {
+  .catalog {
+    padding-top: 80px;
+  }
 }
 
 .catalog__title {
@@ -550,65 +562,109 @@ a {
 }
 
 .upload-photo {
-  background-image: url(../../images/upload-photo/bgc-img-3@1x.webp);
+  background-image: url(../images/upload-photo/bgc-img-3@1x.webp);
   background-repeat: no-repeat;
-  background-size: 1034px 1090px;
-  background-position: -100px bottom;
+  background-size: contain;
+  background-position: -50px 590px;
+}
+@media screen and (min-width: 333px) {
+  .upload-photo {
+    background-position: -50px 540px;
+  }
+}
+@media screen and (min-width: 381px) {
+  .upload-photo {
+    background-position: -50px 510px;
+  }
+}
+@media screen and (min-width: 391px) {
+  .upload-photo {
+    background-position: -50px 460px;
+  }
+}
+@media screen and (min-width: 500px) {
+  .upload-photo {
+    background-position: -150px 460px;
+  }
+}
+@media screen and (min-width: 720px) {
+  .upload-photo {
+    background-position: -500px 150px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .upload-photo {
+    background-position: -500px 250px;
+  }
+}
+@media screen and (max-width: 719px) {
+  .upload-photo {
+    text-align: center;
+  }
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .upload-photo {
-    background-image: url(../../images/upload-photo/bgc-img-3@2x.webp);
+    background-image: url(../images/upload-photo/bgc-img-3@2x.webp);
   }
 }
 @media (min-device-pixel-ratio: 3), (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
   .upload-photo {
-    background-image: url(../../images/upload-photo/bgc-img-3@3x.webp);
-  }
-}
-@media screen and (min-width: 1920px) {
-  .upload-photo {
-    background-size: 1034px 1090px;
-    background-position: -100px bottom;
+    background-image: url(../images/upload-photo/bgc-img-3@3x.webp);
   }
 }
 
 .upload-photo__bgi-2 {
   width: 100%;
-  height: 330px;
-  background-image: url(../../images/upload-photo/bgc-img-2@1x.webp);
+  height: 150px;
+  background-image: url(../images/upload-photo/bgc-img-2@1x.webp);
   background-size: cover;
+}
+@media screen and (min-width: 1200px) {
+  .upload-photo__bgi-2 {
+    height: 330px;
+  }
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .upload-photo__bgi-2 {
-    background-image: url(../../images/upload-photo/bgc-img-2@2x.webp);
+    background-image: url(../images/upload-photo/bgc-img-2@2x.webp);
   }
 }
 @media (min-device-pixel-ratio: 3), (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
   .upload-photo__bgi-2 {
-    background-image: url(../../images/upload-photo/bgc-img-2@3x.webp);
+    background-image: url(../images/upload-photo/bgc-img-2@3x.webp);
   }
 }
 
 .upload-photo__bgi-1 {
   width: 100%;
-  height: 300px;
-  background-image: url(../../images/upload-photo/bgc-img-1@1x.webp);
+  height: 200px;
+  background-image: url(../images/upload-photo/bgc-img-1@1x.webp);
   background-size: cover;
+}
+@media screen and (min-width: 1200px) {
+  .upload-photo__bgi-1 {
+    height: 489px;
+  }
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .upload-photo__bgi-1 {
-    background-image: url(../../images/upload-photo/bgc-img-1@2x.webp);
+    background-image: url(../images/upload-photo/bgc-img-1@2x.webp);
   }
 }
 @media (min-device-pixel-ratio: 3), (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
   .upload-photo__bgi-1 {
-    background-image: url(../../images/upload-photo/bgc-img-1@3x.webp);
+    background-image: url(../images/upload-photo/bgc-img-1@3x.webp);
   }
 }
 
 .upload-photo__wrap {
   max-width: 481px;
   margin-left: auto;
+}
+@media screen and (min-width: 720px) {
+  .upload-photo__wrap {
+    padding-top: 79px;
+  }
 }
 
 .upload-photo__title {
@@ -623,5 +679,10 @@ a {
 }
 
 .upload-photo__button {
-  padding: 30px 50px;
+  padding: 20px 40px;
+}
+@media screen and (min-width: 1200px) {
+  .upload-photo__button {
+    padding: 30px 50px;
+  }
 }/*# sourceMappingURL=main.css.map */

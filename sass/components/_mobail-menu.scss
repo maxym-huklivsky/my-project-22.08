@@ -6,7 +6,7 @@
 	width: 100%;
 	height: 100%;
 	padding: 80px 40px 40px;
-	transform: translateY(-200%);
+	transform: translateY(-100%);
 	transition: transform $transition;
 	overflow: scroll;
 
@@ -29,8 +29,10 @@
 
 .menu-close {
 	position: absolute;
-	top: 32px;
+	top: 40px;
 	right: 30px;
+	transform: translateY(-50%);
+
 	fill: $grey-txt-cl-1;
 }
 
