@@ -16,20 +16,53 @@
 </head>
 
 <body>
-	<header class="header">
-		<div class="header-absolute">
-			<p class="header__title" href="">Сладкий сундук</p>
-			<div class="mobail-conect">
-				<svg class="mobail-conect__icons" width="40" height="40">
-					<use href="./images/icons.svg#close"></use>
-					<use href="./images/icons.svg#eject"></use>
-				</svg>
+	<!-- Mobail menu -->
+	<div class="menu" data-menu>
+		<svg class="menu-close" width="40" height="40" data-menu-close>
+			<use href="./images/icons.svg#close"></use>
+		</svg>
+		<div class="menu__nav">
+			<a class="menu-nav__item">Не нашли то что нужно?</a>
+			<a class="menu-nav__item">Кто будет готовить?</a>
+			<a class="menu-nav__item">Cделайте заказ</a>
+		</div>
+		<div class="menu__conect">
+			<p class="menu__title">Где можно нас найти?</p>
+			<a class="menu__address" href="https://goo.gl/maps/rhSm74M7pe5zrsgv7" target="_blank"
+				rel="noopener noreferrer">
+				<div class="wrap-svg">
+					<svg class="menu__icon" width="17" height="17">
+						<use href="./images/icons.svg#geo"></use>
+					</svg>
+				</div>
+				<span class="menu-address__text">г. Санкт Петербург, ул. Куйбышева 31</span>
+			</a>
+			<strong class="menu__title">Свяжитесь с нами!</strong>
+			<div class="menu__tel">
+				<a href="tel:+88128449549">
+					<svg class="menu__icon" width="36" height="36">
+						<use href="./images/icons.svg#tel"></use>
+					</svg>
+				</a>
+				<div class="menu-tel__wrap">
+					<a class="menu-tel__text" href="tel:+88128449549">8 (812) 844-95-49</a>
+					<p class="menu-tel__desc">Ежедневно с 9:00 до 20:00</p>
+				</div>
 			</div>
+		</div>
+	</div>
+
+	<header class="header">
+		<div class="header-absolute" data-header>
+			<a class="header__title" href="">Сладкий сундук</a>
+			<svg class="menu-open" width="40" height="40" data-menu-open>
+				<use href="./images/icons.svg#menu"></use>
+			</svg>
 			<div class="header__wrap">
 				<a class="header__address" href="https://goo.gl/maps/rhSm74M7pe5zrsgv7" target="_blank"
 					rel="noopener noreferrer">
 					<div class="wrap-svg">
-						<svg width="17" height="17">
+						<svg class="header__icon" width="17" height="17">
 							<use href="./images/icons.svg#geo"></use>
 						</svg>
 					</div>
@@ -37,7 +70,7 @@
 				</a>
 				<div class="header__tel">
 					<a href="tel:+88128449549">
-						<svg width="36" height="36">
+						<svg class="header__icon" width="36" height="36">
 							<use href="./images/icons.svg#tel"></use>
 						</svg>
 					</a>
@@ -58,14 +91,14 @@
 				<h1 class="hero__title">Пирожные и капкейки от 150 ₽/шт. с доставкой по Санкт Петербургу</h1>
 				<p class="hero__desc">Приготовим за 3 часа в день заказа. Доставка на авто в холодильнике.</p>
 				<div class="hero__wrap">
-					<button class="hero__button">Перейти в каталог</button>
+					<a href="#catalog" class="hero__button">Перейти в каталог</a>
 					<p class="hero__text">9 различных видов на выбор</p>
 				</div>
 			</div>
 		</section>
 
 		<!-- Сatalog -->
-		<section class="catalog">
+		<section class="catalog" id="catalog">
 			<div class="container">
 				<h2 class="catalog__title">Для любых событий и дорогих вам людей</h2>
 				<ul class="catalog-list">
@@ -226,16 +259,24 @@
 			</div>
 		</section>
 
-		<!-- Upload-photo -->
-		<section>
-			<button>Не нашли то что нужно?</button>
-			<h2>Приготовим заказ любой сложности  по фото или эскизу</h2>
-			<p>Загрузите фотографию или эскиз капкейков  и мы рассчитаем стоимость за 30 минут</p>
-			<button>Загрузить фотографию</button>
+		<!-- Upload photo -->
+		<section class="upload-photo">
+			<div class="upload-photo__bgi-2"></div>
+			<div class="container">
+				<div class="upload-photo__wrap">
+					<div class="upload-photo__button-sec">Не нашли то что нужно?</div>
+					<h2 class="upload-photo__title">Приготовим заказ любой сложности по фото или эскизу</h2>
+					<p class="upload-photo__text">Загрузите фотографию или эскиз капкейков и мы рассчитаем стоимость за 30
+						минут
+					</p>
+					<button class="upload-photo__button">Загрузить фотографию</button>
+				</div>
+			</div>
+			<div class="upload-photo__bgi-1"></div>
 		</section>
 
 		<!-- Сonfectioner -->
-		<section>
+		<!-- <section>
 			<button>Кто будет готовить?</button>
 			<h2>Лично приготовлю  и всё красиво упакую  для вашего события</h2>
 			<ul>
@@ -248,10 +289,10 @@
 			<div class="catalog-list__wrap"></div>
 			<h3 class="catalog-list__title">Юлия Кондратьева</h3>
 			<p>Ваш кондитер</p>
-		</section>
+		</section> -->
 
 		<!-- Experience -->
-		<section>
+		<!-- <section>
 			<h2>Сделали более 3.000 заказов за 2 года</h2>
 			<p>Посмотрите фото реальных заказов из нашего instagram</p>
 			<ul>
@@ -265,10 +306,10 @@
 				<li><img src="" alt=""></li>
 				<li><img src="" alt=""></li>
 			</ul>
-		</section>
+		</section> -->
 
 		<!-- Make-order -->
-		<section>
+		<!-- <section>
 			<h2>Чтобы сделать заказ, укажите ваш телефон</h2>
 			<p>Мы перезвоним в течении 15 минут, чтобы уточнить ваши пожелания</p>
 			<input type="text" placeholder="Номер телефона">
@@ -277,15 +318,18 @@
 				<input type="checkbox">
 				<span>Нажамая на кнопку, вы соглашаетесь с условиями обработки персональных данных</span>
 			</label>
-		</section>
+		</section> -->
 	</main>
 
-	<footer>
+	<!-- <footer>
 		<a>Согласие на обработку данных</a>
 		<a>Служба поддержки</a>
 		<a>Политика конфиденциальности</a>
 		<p>&#169; nazvaniesaita.ru, 2054 | Название компании или ИП ОГРН 0000000000000</p>
-	</footer>
+	</footer> -->
+
+	<script src="./js/mobail-menu.js"></script>
+	<script src="./js/header-scroll.js"></script>
 </body>
 
 </html>

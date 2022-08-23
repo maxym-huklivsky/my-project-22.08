@@ -7,8 +7,10 @@
 @import './base/reset';
 
 // Components
+@import './components/mobail-menu';
 
 // Layout
 @import './layout/header';
 @import './layout/hero';
 @import './layout/catalog';
+@import './layout/upload-photo';

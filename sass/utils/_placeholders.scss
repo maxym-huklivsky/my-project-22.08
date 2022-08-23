@@ -16,24 +16,6 @@
 	}
 }
 
-// Container
-%container {
-	padding: 0 10px;
-	margin: 0 auto;
-
-	@media screen and (min-width: 480px) {
-		width: 480px;
-	}
-
-	@media screen and (min-width: 720px) {
-		width: 720px;
-	}
-
-	@media screen and (min-width: 1200px) {
-		width: 1200px;
-	}
-}
-
 // Button
 %button {
 	font-weight: 500;
@@ -41,11 +23,17 @@
 	line-height: 1.52;
 	background: #FED84C;
 	border-radius: 8px;
+	color: $grey-txt-cl-1;
+
+	&:hover {
+		background-color: #ffcc00;
+	}
 }
 
 %button-sec {
 	padding: 10px 18px;
 	display: inline-block;
+	margin-bottom: 24px;
 
 	font-size: 11px;
 	line-height: 1.5;

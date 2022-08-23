@@ -1,0 +1,94 @@
+.upload-photo {
+	@extend %section-dark;
+
+	background-image: url(../../images/upload-photo/bgc-img-3@1x.webp);
+	background-repeat: no-repeat;
+	background-size: 1034px 1090px;
+	background-position: -100px bottom;
+
+	@media (min-device-pixel-ratio: 2),
+	(min-resolution: 192dpi),
+	(min-resolution: 2dppx) {
+		background-image: url(../../images/upload-photo/bgc-img-3@2x.webp);
+	}
+
+	@media (min-device-pixel-ratio: 3),
+	(min-resolution: 288dpi),
+	(min-resolution: 3dppx) {
+		background-image: url(../../images/upload-photo/bgc-img-3@3x.webp);
+	}
+
+	@media screen and (min-width:1920px) {
+		background-size: 1034px 1090px;
+		background-position: -100px bottom;
+	}
+}
+
+.upload-photo__bgi-2 {
+	width: 100%;
+	height: 330px;
+
+	background-image: url(../../images/upload-photo/bgc-img-2@1x.webp);
+	background-size: cover;
+
+	@media (min-device-pixel-ratio: 2),
+	(min-resolution: 192dpi),
+	(min-resolution: 2dppx) {
+		background-image: url(../../images/upload-photo/bgc-img-2@2x.webp);
+	}
+
+	@media (min-device-pixel-ratio: 3),
+	(min-resolution: 288dpi),
+	(min-resolution: 3dppx) {
+		background-image: url(../../images/upload-photo/bgc-img-2@3x.webp);
+	}
+}
+
+.upload-photo__bgi-1 {
+	width: 100%;
+	// height: 489px;
+	height: 300px;
+
+	background-image: url(../../images/upload-photo/bgc-img-1@1x.webp);
+	background-size: cover;
+
+	@media (min-device-pixel-ratio: 2),
+	(min-resolution: 192dpi),
+	(min-resolution: 2dppx) {
+		background-image: url(../../images/upload-photo/bgc-img-1@2x.webp);
+	}
+
+	@media (min-device-pixel-ratio: 3),
+	(min-resolution: 288dpi),
+	(min-resolution: 3dppx) {
+		background-image: url(../../images/upload-photo/bgc-img-1@3x.webp);
+	}
+}
+
+.upload-photo__wrap {
+	max-width: 481px;
+	// padding-top: 79px;
+	margin-left: auto;
+}
+
+.upload-photo__button-sec {
+	@extend %button-sec;
+}
+
+.upload-photo__title {
+	@extend %subtitle;
+	margin-bottom: 24px;
+}
+
+.upload-photo__text {
+	margin-bottom: 40px;
+
+	font-size: 21px;
+	line-height: 1.43;
+	letter-spacing: -0.2px;
+}
+
+.upload-photo__button {
+	@extend %button;
+	padding: 30px 50px;
+}
