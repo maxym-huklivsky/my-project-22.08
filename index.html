@@ -16,45 +16,9 @@
 </head>
 
 <body>
-	<!-- Mobail menu -->
-	<div class="menu" data-menu>
-		<svg class="menu-close" width="40" height="40" data-menu-close>
-			<use href="./images/icons.svg#close"></use>
-		</svg>
-		<div class="menu__nav">
-			<a class="menu-nav__item">Не нашли то что нужно?</a>
-			<a class="menu-nav__item">Кто будет готовить?</a>
-			<a class="menu-nav__item">Cделайте заказ</a>
-		</div>
-		<div class="menu__conect">
-			<p class="menu__title">Где можно нас найти?</p>
-			<a class="menu__address" href="https://goo.gl/maps/rhSm74M7pe5zrsgv7" target="_blank"
-				rel="noopener noreferrer">
-				<div class="wrap-svg">
-					<svg class="menu__icon" width="17" height="17">
-						<use href="./images/icons.svg#geo"></use>
-					</svg>
-				</div>
-				<span class="menu-address__text">г. Санкт Петербург, ул. Куйбышева 31</span>
-			</a>
-			<strong class="menu__title">Свяжитесь с нами!</strong>
-			<div class="menu__tel">
-				<a href="tel:+88128449549">
-					<svg class="menu__icon" width="36" height="36">
-						<use href="./images/icons.svg#tel"></use>
-					</svg>
-				</a>
-				<div class="menu-tel__wrap">
-					<a class="menu-tel__text" href="tel:+88128449549">8 (812) 844-95-49</a>
-					<p class="menu-tel__desc">Ежедневно с 9:00 до 20:00</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
 	<header class="header">
 		<div class="header-absolute" data-header>
-			<a class="header__title" href="">Сладкий сундук</a>
+			<a class="header__title" href="#catalog">Сладкий сундук</a>
 			<svg class="menu-open" width="40" height="40" data-menu-open>
 				<use href="./images/icons.svg#menu"></use>
 			</svg>
@@ -82,6 +46,42 @@
 			</div>
 		</div>
 	</header>
+
+	<!-- Mobail menu -->
+	<div class="menu" data-menu>
+		<svg class="menu-close" width="40" height="40" data-menu-close>
+			<use href="./images/icons.svg#close"></use>
+		</svg>
+		<div class="menu__nav">
+			<a href="#upload-photo" class="menu-nav__item" data-menu-closeq>Не нашли то что нужно?</a>
+			<a class="menu-nav__item" data-menu-closew>Кто будет готовить?</a>
+			<a class="menu-nav__item" data-menu-closee>Cделайте заказ</a>
+		</div>
+		<div class="menu__conect">
+			<p class="menu__title">Где можно нас найти?</p>
+			<a class="menu__address" href="https://goo.gl/maps/rhSm74M7pe5zrsgv7" target="_blank"
+				rel="noopener noreferrer">
+				<div class="wrap-svg">
+					<svg class="menu__icon" width="17" height="17">
+						<use href="./images/icons.svg#geo"></use>
+					</svg>
+				</div>
+				<span class="menu-address__text">г. Санкт Петербург, ул. Куйбышева 31</span>
+			</a>
+			<strong class="menu__title">Свяжитесь с нами!</strong>
+			<div class="menu__tel">
+				<a href="tel:+88128449549">
+					<svg class="menu__icon" width="36" height="36">
+						<use href="./images/icons.svg#tel"></use>
+					</svg>
+				</a>
+				<div class="menu-tel__wrap">
+					<a class="menu-tel__text" href="tel:+88128449549">8 (812) 844-95-49</a>
+					<p class="menu-tel__desc">Ежедневно с 9:00 до 20:00</p>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<main>
 		<!-- Hero -->
@@ -260,7 +260,7 @@
 		</section>
 
 		<!-- Upload photo -->
-		<section class="upload-photo">
+		<section class="upload-photo" id="upload-photo">
 			<div class="upload-photo__bgi-2"></div>
 			<div class="container">
 				<div class="upload-photo__wrap">
@@ -278,11 +278,11 @@
 		<!-- Сonfectioner -->
 		<!-- <section>
 			<button>Кто будет готовить?</button>
-			<h2>Лично приготовлю  и всё красиво упакую  для вашего события</h2>
+			<h2>Лично приготовлю и всё красиво упакую для вашего события</h2>
 			<ul>
-				<li>Проконсультирую по выбору капкейков и придумаю нестандартную идею</li>
-				<li>Приготовлю капкейки для вашего события,  которые обязательно всем понравятся </li>
-				<li>Аккуратно и красиво всё упакую, если  вы хотите сделать приятный подарок</li>
+				<li>Проконсультирую по выбору капкейкови придумаю нестандартную идею</li>
+				<li>Приготовлю капкейки для вашего события, которые обязательно всем понравятся </li>
+				<li>Аккуратно и красиво всё упакую, если вы хотите сделать приятный подарок</li>
 			</ul>
 			<button>Задать вопрос Юлии</button>
 			<img src="" alt="">
@@ -330,6 +330,7 @@
 
 	<script src="./js/mobail-menu.js"></script>
 	<script src="./js/header-scroll.js"></script>
+	<script src="./js/id.js"></script>
 </body>
 
 </html>

@@ -47,6 +47,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   color: #2E363E;
+  scroll-behavior: smooth;
 }
 body::before {
   content: "";
