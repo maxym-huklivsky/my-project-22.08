@@ -1,3 +1,9 @@
+.experience__container {
+	max-width: 1940px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+
 .experience__title {
 	@extend %subtitle;
 	margin-bottom: 14px;
@@ -11,4 +17,22 @@
 	font-size: 24px;
 	line-height: 1.43;
 	text-align: center;
+}
+
+.experience__list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 9px;
+}
+
+.experience__item {
+	flex-basis: 100%;
+
+	@media screen and (min-width: 720px) {
+		flex-basis: calc(100% / 2 - 4.5px);
+	}
+
+	@media screen and (min-width: 1200px) {
+		flex-basis: calc(100% / 3 - 6px);
+	}
 }

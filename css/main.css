@@ -813,6 +813,12 @@ a {
   background-color: #F2F6FA;
 }
 
+.experience__container {
+  max-width: 1940px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
 .experience__title {
   margin-bottom: 14px;
   text-align: center;
@@ -823,4 +829,24 @@ a {
   font-size: 24px;
   line-height: 1.43;
   text-align: center;
+}
+
+.experience__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.experience__item {
+  flex-basis: 100%;
+}
+@media screen and (min-width: 720px) {
+  .experience__item {
+    flex-basis: calc(50% - 4.5px);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .experience__item {
+    flex-basis: calc(33.3333333333% - 6px);
+  }
 }/*# sourceMappingURL=main.css.map */
