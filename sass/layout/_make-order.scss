@@ -1,39 +1,61 @@
 .make-order {
+	padding: 300px 0 218px 0;
+
 	background-color: $dark-bgc-cl;
 	text-align: center;
 }
 
 .make-order__container {
-	padding: 70px 150px;
+	max-width: 1180px;
+	padding: 40px 90px;
+	margin: 0 10px;
 
 	background-color: $white-txt-cl;
 	border-radius: 8px;
+
+	@media screen and (min-width: 1200px) {
+		padding: 70px 150px;
+		margin: 0 auto;
+	}
 }
 
 .make-order__title {
 	margin-bottom: 12px;
 
-	font-size: 36px;
+	font-size: 30px;
 	line-height: 1.33;
+
+	@media screen and (min-width: 1200px) {
+		font-size: 36px;
+	}
 }
 
 .make-order__desc {
 	margin-bottom: 36px;
 
-	font-size: 21px;
+	font-size: 16px;
 	line-height: 1.43;
 	letter-spacing: -0.2px;
+
+	@media screen and (min-width: 1200px) {
+		font-size: 21px;
+	}
 }
 
 .make-order__wrap {
 	margin-bottom: 24px;
+	display: flex;
+	justify-content: space-between;
+
+	@media screen and (min-width: 719px) {
+		flex-direction: column;
+	}
 }
 
 .make-order__input {
 	padding: 32px 30px 29px 58px;
-	width: 380px;
+	width: calc(100% / 2 - 10px);
 	height: 85px;
-	margin-right: 20px;
 
 	background: #F2F6FA;
 	border-radius: 8px;
@@ -49,7 +71,8 @@
 
 .make-order__button {
 	@extend %button;
-	padding: 29px 124px;
+	padding: 29px;
+	width: calc(100% / 2 - 10px);
 }
 
 .make-order__text {
