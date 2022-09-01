@@ -12,11 +12,16 @@
 }
 
 .experience__text {
-	margin-bottom: 80px;
+	margin-bottom: 40px;
 
-	font-size: 24px;
+	font-size: 20px;
 	line-height: 1.43;
 	text-align: center;
+
+	@media screen and (min-width:1200px) {
+		font-size: 24px;
+		margin-bottom: 80px;
+	}
 }
 
 .experience__list {

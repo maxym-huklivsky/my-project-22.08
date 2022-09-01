@@ -1,0 +1,63 @@
+.make-order {
+	background-color: $dark-bgc-cl;
+	text-align: center;
+}
+
+.make-order__container {
+	padding: 70px 150px;
+
+	background-color: $white-txt-cl;
+	border-radius: 8px;
+}
+
+.make-order__title {
+	margin-bottom: 12px;
+
+	font-size: 36px;
+	line-height: 1.33;
+}
+
+.make-order__desc {
+	margin-bottom: 36px;
+
+	font-size: 21px;
+	line-height: 1.43;
+	letter-spacing: -0.2px;
+}
+
+.make-order__wrap {
+	margin-bottom: 24px;
+}
+
+.make-order__input {
+	padding: 32px 30px 29px 58px;
+	width: 380px;
+	height: 85px;
+	margin-right: 20px;
+
+	background: #F2F6FA;
+	border-radius: 8px;
+	border: none;
+	outline: none;
+
+	&::placeholder {
+		font-size: 15px;
+		line-height: 1.6;
+		color: $grey-txt-cl-5;
+	}
+}
+
+.make-order__button {
+	@extend %button;
+	padding: 29px 124px;
+}
+
+.make-order__text {
+	font-size: 11px;
+	line-height: 1.3;
+	color: $grey-txt-cl-5;
+}
+
+.make-order__link {
+	border-bottom: 1px solid $grey-txt-cl-5;
+}
