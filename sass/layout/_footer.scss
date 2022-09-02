@@ -26,6 +26,14 @@
 	}
 }
 
+.footer__link {
+
+	&:hover,
+	&:focus {
+		text-decoration: underline;
+	}
+}
+
 .footer__text {
 	text-align: center;
 }

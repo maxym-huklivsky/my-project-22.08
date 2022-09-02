@@ -332,6 +332,9 @@ a {
   display: flex;
   gap: 12px;
 }
+.header__address:hover, .header__address:focus {
+  text-decoration: underline;
+}
 @media screen and (min-width: 1200px) {
   .header__address {
     margin-right: 69px;
@@ -362,6 +365,9 @@ a {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.52;
+}
+.header__tel:hover .header-tel__text, .header__tel:focus .header-tel__text {
+  text-decoration: underline;
 }
 @media screen and (min-width: 1200px) {
   .header-tel__text {
@@ -1096,6 +1102,10 @@ a {
     gap: 10px;
     align-items: center;
   }
+}
+
+.footer__link:hover, .footer__link:focus {
+  text-decoration: underline;
 }
 
 .footer__text {
